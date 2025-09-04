@@ -1,0 +1,21 @@
+command: [
+  "streamlit", 
+  "run",
+  "app.py",
+]
+
+display_name: "Healthcare Analytics Dashboard"
+
+description: "Advanced healthcare analytics dashboard with ML-powered insights, capacity planning, and natural language query interface - Databricks Compatible"
+
+env:
+  - name: STREAMLIT_BROWSER_GATHER_USAGE_STATS
+    value: "false"
+  - name: STREAMLIT_SERVER_MAX_UPLOAD_SIZE
+    value: "200"
+  - name: STREAMLIT_SERVER_ENABLE_CORS
+    value: "false"
+  - name: STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION
+    value: "false"
+  - name: PYTHONPATH
+    value: "/app"
